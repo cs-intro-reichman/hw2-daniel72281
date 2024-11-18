@@ -8,7 +8,7 @@ public class Cheers {
 
             int x = 0;
             int y = s.length() -1;
-            String an = "AEFHILMNORSX";
+            String an = "AEFHILMNORSXaefhilmnorsx";
 
             while( x <= y){ 
             char c = s.charAt(x);
@@ -21,7 +21,7 @@ public class Cheers {
                 x++;
                 }
                 System.out.println("What does that spell?");
-                
+
                 while (cheer < times) {
                     System.out.println(s + "!!!");
                     cheer++;
