@@ -7,15 +7,15 @@ public class CalcPi {
 	
 	double divisor1 = 3;
 	double divisor2 = 5;
-	double pie = 1;
+	double pi = 1;
 	while (t <= times) {
-		pie = pie - 1/divisor1 + 1/divisor2;
+		pi = pi - 1/divisor1 + 1/divisor2;
 		divisor1 = divisor1 + 4;
 		divisor2 = divisor2 + 4;	
 		t++;		
 	  }
 	    System.out.println("pi according to java: " + Math.PI );
-		System.out.println("pi, aprproximated:    " + pie*4 );
+		System.out.println("pi, aprproximated:    " + pi*4 );
 	}
 }
 
