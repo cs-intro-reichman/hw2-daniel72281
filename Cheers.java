@@ -12,17 +12,19 @@ public class Cheers {
 
             while( x <= y){ 
             char c = s.charAt(x);
+            c = Character.toUpperCase(c);
 
               if (an.indexOf(c) == -1){
-                System.out.println("Give me" + " a  " + s.charAt(x) + ": " + s.charAt(x) + "!" );
+                System.out.println("Give me" + " a  " + c + ": " + c + "!" );
               }else{
-                 System.out.println("Give me" + " an " + s.charAt(x) + ": " + s.charAt(x) + "!" );}
+                 System.out.println("Give me" + " an " + c + ": " + c + "!" );}
                
                 x++;
                 }
                 System.out.println("What does that spell?");
 
                 while (cheer < times) {
+                  s = s.toUpperCase();
                     System.out.println(s + "!!!");
                     cheer++;
                 }
