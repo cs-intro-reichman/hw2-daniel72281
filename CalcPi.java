@@ -1,32 +1,22 @@
 // Computes an approximation of PI.
 public class CalcPi {
 	public static void main(String [] args) { 
-        
-		int hours = Integer.parseInt("" + args[0].charAt(0) + args[0].charAt(1));		
-		int minutes = Integer.parseInt("" + args[0].charAt(3) + args[0].charAt(4));  
-		int addminuts = Integer.parseInt("" + args[1]);
 
-        // took inpot hours and minuts and added the addminuts
-		int totalminuts = (hours * 60) + minutes + addminuts;
-		int totalhours = totalminuts / 60;
-
-        // calc the new time in hh:mm format
-		int newhours = totalhours % 24;
-		int newminuts = totalminuts - (totalhours * 60);
-
-        //made conditions to fix any hh/mm<10 to apear "0x"
-		if (newminuts < 10  && newhours > 10) {		
-		    System.out.println(newhours + ":0" + newminuts);}
-
-		if (newminuts < 10  && newhours < 10){
-			System.out.println("0" + newhours + ":0" + newminuts);}
-
-		if (newminuts > 10  && newhours < 10) {
-			System.out.println("0" + newhours + ":" + newminuts); }
-
-		if (newminuts > 10  && newhours > 10) {
- 		 System.out.println(newhours + ":" + newminuts); }
-		
+	int times = Integer.parseInt(args[0]);
+	int t = 0;
+	
+	double divisor1 = 3;
+	double divisor2 = 5;
+	double pie = 1;
+	while (t <= times) {
+		pie = pie - 1/divisor1 + 1/divisor2;
+		divisor1 = divisor1 + 4;
+		divisor2 = divisor2 + 4;	
+		t++;		
+	  }
+	    System.out.println("pi according to java: " + Math.PI );
+		System.out.println("pi, aprproximated:    " + pie*4 );
 	}
-
 }
+
+
