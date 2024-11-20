@@ -20,8 +20,8 @@ public class CalcPi {
 		divisor = divisor + 2;	
 		t++;		
 	  }
-	    System.out.println("pi according to java: " + Math.PI );
-		System.out.println("pi, approximated:	 " + pi*4 );
+	    System.out.println("pi according to Java: " + Math.PI );
+		System.out.println("pi, approximated:     " + pi*4 );
 		
 	}
 }
