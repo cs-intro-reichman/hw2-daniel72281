@@ -9,6 +9,7 @@ public class Collatz {
 		if (theLetter.equals(v)) {
 			if (seed == 1){ 
 				System.out.println(seed +" "+ (seed *3 +1) +" "+ (seed +1) +" " + seed + " (4)" );
+				System.out.println("Every one of the first " +seed +" hailstone sequences reached 1.");		
 				 
 			}
 			else{
