@@ -5,31 +5,26 @@ public class Collatz {
 		String theLetter = args[1];
 		int next = seed;
 		int count = 0;
-		
-		// compering inpot to v or else(c) to print string as needed all the code is nested inside this loop
 		String v = "v";
+		// check if user entered v or c all the code is nested insaide this condition
 		if (theLetter.equals(v)) {
-			// to overcome difficulty with seed value 1 created a condition that prints string as calc,
-			//else valeu will go inside main loop
-
+			//check if seed 1 and prints a string representing the sequence to overcome difficulties 
 			if (seed == 1){ 
-				System.out.println(seed +" "+ (seed *3 +1) +" "+ (seed +1) +" " + seed + " (4)" );
-				System.out.println("Every one of the first " +seed +" hailstone sequences reached 1.");		
+				System.out.println(seed +" "+ (seed *3 +1) +" "+ (seed +1) +" " + seed + "(4)" );
 				 
 			}
 			else{
 	
 				System.out.println("1 4 2 1 (4)");
-				// main loop start from 2 and goes up to inpot seed while counting steps
+				// main loop for the sequence from 2 up to inpot seed
 				
 				for(int i = 2 ; i <= seed; i++) {
 					next = i;
 					count =1;
-				//nested while loop insade the main for loop to calc the sequence as needed, divided to odd or even calc
-	
-			    while (next != 1) {
+	        // nested loop to calc the sequence
+			while (next != 1) {
 				
-			
+			    //condition to check if numbre is odd or even for doing the right operation for sequence
 				if (next % 2 == 0) {
 					System.out.print(next + " ");
 					next = next / 2;
@@ -43,16 +38,13 @@ public class Collatz {
 	
 				}
 			}	
-	        // prints the sequence
+	        // prints the sequence with the count
 			System.out.println(next + " (" + count + ")" );
-			
-			}
-					
-			System.out.println("Every one of the first " +seed +" hailstone sequences reached 1.");		
+			}		
 			}
 		}
 		else{
-			System.out.println("Every one of the first " +seed +" hailstone sequences reached 1.");		
+			System.out.println("Every one pf the first " +seed +" hailstone sequences r");		
 		}	
         
 			
