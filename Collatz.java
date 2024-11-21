@@ -8,7 +8,7 @@ public class Collatz {
 		String v = "v";
 		if (theLetter.equals(v)) {
 			if (seed == 1){ 
-				System.out.println(seed +" "+ (seed *3 +1) +" "+ (seed +1) +" " + seed + "(4)" );
+				System.out.println(seed +" "+ (seed *3 +1) +" "+ (seed +1) +" " + seed + " (4)" );
 				 
 			}
 			else{
